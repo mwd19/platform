@@ -1,14 +1,14 @@
 - name: Apply Monitoring namespace manifest to the cluster.
   community.kubernetes.k8s:
     state: present
-    src: /home/arik/kubernetes/platform/resources/manifests/namespaces/monitoring.yaml
+    src: /Users/moi/work/glitzup/saleor-tf-k8s/platform/resources/manifests/namespaces/monitoring.yaml
 
 - name: Apply Prometheus Node Exporter service manifest to the cluster.
   community.kubernetes.k8s:
     state: present
-    src: /home/arik/kubernetes/platform/prometheus/manifests/exporter/service.yaml
+    src: /Users/moi/work/glitzup/saleor-tf-k8s/platform/prometheus/manifests/exporter/service.yaml
 
 - name: Apply Prometheus Node Exporter daemon manifest to the cluster.
   community.kubernetes.k8s:
     state: present
-    src: /home/arik/kubernetes/platform/prometheus/manifests/exporter/daemon.yaml
+    src: /Users/moi/work/glitzup/saleor-tf-k8s/platform/prometheus/manifests/exporter/daemon.yaml

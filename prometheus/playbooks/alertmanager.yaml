@@ -1,19 +1,19 @@
 - name: Apply Monitoring namespace manifest to the cluster.
   community.kubernetes.k8s:
     state: present
-    src: /home/arik/kubernetes/platform/resources/manifests/namespaces/monitoring.yaml
+    src: /Users/moi/work/glitzup/saleor-tf-k8s/platform/resources/manifests/namespaces/monitoring.yaml
 
 - name: Apply Prometheus Alertmanager configmap manifest to the cluster.
   community.kubernetes.k8s:
     state: present
-    src: /home/arik/kubernetes/platform/prometheus/manifests/alertmanager/config.yaml
+    src: /Users/moi/work/glitzup/saleor-tf-k8s/platform/prometheus/manifests/alertmanager/config.yaml
 
 - name: Apply Prometheus Alertmanager service manifest to the cluster.
   community.kubernetes.k8s:
     state: present
-    src: /home/arik/kubernetes/platform/prometheus/manifests/alertmanager/service.yaml
+    src: /Users/moi/work/glitzup/saleor-tf-k8s/platform/prometheus/manifests/alertmanager/service.yaml
 
 - name: Apply Prometheus Alertmanager deployment manifest to the cluster.
   community.kubernetes.k8s:
     state: present
-    src: /home/arik/kubernetes/platform/prometheus/manifests/alertmanager/deployment.yaml
+    src: /Users/moi/work/glitzup/saleor-tf-k8s/platform/prometheus/manifests/alertmanager/deployment.yaml

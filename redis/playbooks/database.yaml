@@ -1,24 +1,24 @@
 - name: Apply Redis database namespace manifest to the cluster.
   community.kubernetes.k8s:
     state: present
-    src: /home/arik/kubernetes/platform/resources/manifests/namespaces/redis.yaml
+    src: /Users/moi/work/glitzup/saleor-tf-k8s/platform/resources/manifests/namespaces/redis.yaml
 
 - name: Apply Redis database volume manifest to the cluster.
   community.kubernetes.k8s:
     state: present
-    src: /home/arik/kubernetes/platform/redis/manifests/database/volume.yaml
+    src: /Users/moi/work/glitzup/saleor-tf-k8s/platform/redis/manifests/database/volume.yaml
 
 - name: Apply Redis database configmap manifest to the cluster.
   community.kubernetes.k8s:
     state: present
-    src: /home/arik/kubernetes/platform/redis/manifests/database/config.yaml
+    src: /Users/moi/work/glitzup/saleor-tf-k8s/platform/redis/manifests/database/config.yaml
 
 - name: Apply Redis database service manifest to the cluster.
   community.kubernetes.k8s:
     state: present
-    src: /home/arik/kubernetes/platform/redis/manifests/database/service.yaml
+    src: /Users/moi/work/glitzup/saleor-tf-k8s/platform/redis/manifests/database/service.yaml
 
 - name: Apply Redis database deployment manifest to the cluster.
   community.kubernetes.k8s:
     state: present
-    src: /home/arik/kubernetes/platform/redis/manifests/database/deployment.yaml
+    src: /Users/moi/work/glitzup/saleor-tf-k8s/platform/redis/manifests/database/deployment.yaml

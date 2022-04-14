@@ -12,34 +12,34 @@
     # todo: need to add CD pipelines to GitHub actions. Consider to do it directly to the Raspberry Pi.
 
 #    - name: Include Prometheus server playbooks.
-#      include: /home/arik/kubernetes/platform/prometheus/playbooks/server.yaml
+#      include: /Users/moi/work/glitzup/saleor-tf-k8s/platform/prometheus/playbooks/server.yaml
 #
 #    - name: Include Prometheus Alertmanager playbooks.
-#      include: /home/arik/kubernetes/platform/prometheus/playbooks/alertmanager.yaml
+#      include: /Users/moi/work/glitzup/saleor-tf-k8s/platform/prometheus/playbooks/alertmanager.yaml
 #
 #    - name: Include Prometheus Node Exporter playbooks.
-#      include: /home/arik/kubernetes/platform/prometheus/playbooks/exporter.yaml
+#      include: /Users/moi/work/glitzup/saleor-tf-k8s/platform/prometheus/playbooks/exporter.yaml
 
 #    - name: Include Postgres database playbooks.
-#      include: /home/arik/kubernetes/platform/postgres/playbooks/database.yaml
+#      include: /Users/moi/work/glitzup/saleor-tf-k8s/platform/postgres/playbooks/database.yaml
 #
 ###    - name: Include Postgres database exporter playbooks.
-###      include: /home/arik/kubernetes/platform/redis/playbooks/exporter.yaml
+###      include: /Users/moi/work/glitzup/saleor-tf-k8s/platform/redis/playbooks/exporter.yaml
 #
 #    - name: Include Redis database playbooks.
-#      include: /home/arik/kubernetes/platform/redis/playbooks/database.yaml
+#      include: /Users/moi/work/glitzup/saleor-tf-k8s/platform/redis/playbooks/database.yaml
 
 ##    - name: Include Redis Redis database exporter playbooks.
-##      include: /home/arik/kubernetes/platform/redis/playbooks/exporter.yaml
+##      include: /Users/moi/work/glitzup/saleor-tf-k8s/platform/redis/playbooks/exporter.yaml
 
     - name: Include Django server playbooks.
-      include: /home/arik/kubernetes/platform/saleor/playbooks/django.yaml
+      include_tasks: /Users/moi/work/glitzup/saleor-tf-k8s/platform/saleor/playbooks/django.yaml
 
     - name: Include Beat scheduler playbooks.
-      include: /home/arik/kubernetes/platform/saleor/playbooks/beat.yaml
+      include_tasks: /Users/moi/work/glitzup/saleor-tf-k8s/platform/saleor/playbooks/beat.yaml
 
     - name: Include Celery workers playbooks.
-      include: /home/arik/kubernetes/platform/saleor/playbooks/celery.yaml
+      include_tasks: /Users/moi/work/glitzup/saleor-tf-k8s/platform/saleor/playbooks/celery.yaml
 
     - name: Include Saleor Dashboard playbooks.
-      include: /home/arik/kubernetes/platform/dashboard/playbooks/dashboard.yaml
+      include_tasks: /Users/moi/work/glitzup/saleor-tf-k8s/platform/dashboard/playbooks/dashboard.yaml
